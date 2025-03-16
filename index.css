@@ -1,0 +1,196 @@
+:root {
+    --primary-color: #1DA1F2;
+    --secondary-color: #0F8CDF;
+    --like-color: red;
+    --retweet-color: limegreen;
+    --font-family: 'Roboto', sans-serif;
+    --text-color: #555;
+    --border-color: lightgray;
+    --base-padding: 1rem;
+    --max-width: 800px;
+  }
+  
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+  }
+  
+  html,
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: var(--font-family);
+  }
+  
+  /* Typography & Icons */
+  h1 {
+    color: var(--secondary-color);
+    margin-bottom: 0.625rem; /* 10px */
+    font-size: 1.25rem; /* 20px */
+  }
+  
+  i {
+    font-size: 0.9375rem; /* 15px */
+    cursor: pointer;
+  }
+  
+  .fa-solid {
+    color: #999;
+  }
+  
+  .liked {
+    color: var(--like-color);
+  }
+  
+  .retweeted {
+    color: var(--retweet-color);
+  }
+  
+  /* Layout */
+  main,
+  header {
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: 0 1rem;
+  }
+  
+  header {
+    padding-bottom: 1.5625rem; /* 25px */
+  }
+  
+  .tweet-input-area {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.625rem;
+  }
+  
+  /* Textareas & Button */
+  textarea {
+    border: none;
+    resize: none;
+    padding: var(--base-padding);
+    margin: 0 0 1.25rem 0;
+    height: 3.75rem; /* 60px */
+    width: 100%;
+    font-size: 1.25rem;
+    line-height: 1.875rem;
+  }
+  
+  button {
+    background-color: var(--primary-color);
+    border: none;
+    color: #fff;
+    padding: 0.625rem 1.1875rem;
+    border-radius: 20px;
+    width: 90%;
+    cursor: pointer;
+    font-size: 1.25rem;
+    font-weight: 600;
+  }
+    button:hover {
+        background-color: var(--secondary-color);
+    }
+
+  
+  /* Tweet */
+  .tweet {
+    border-top: 1px solid var(--border-color);
+    padding: 1.25rem 0 0 0;
+    width: 100%;
+    margin: 0.9375rem 0;
+    position: relative;
+  }
+  #torightupper{
+    position: absolute;
+    right: 0.625rem;
+    top: 0.625rem;
+  }
+  
+  .tweet-inner {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.625rem;
+  }
+  
+  .tweet-details {
+    display: flex;
+    font-size: 0.8125rem;
+    justify-content: space-between;
+    width: 10rem;
+  }
+  
+  .tweet-detail {
+    display: flex;
+    gap: 0.25rem;
+  }
+  
+  /* Tweet Reply */
+  .tweet-reply {
+    border-top: 1px solid var(--border-color);
+    padding: 1.25rem 0 0 0;
+    /* margin: 2rem 1rem; */
+    margin: 0.625rem 0 0.625rem 2.5rem;
+    width: 80%;
+    position: relative;
+  }
+
+  .tweet-reply-input{
+    margin-top: 1rem;
+  }
+
+  #tweet-reply-btn{
+    font-size: small;
+    width: 50%;
+  }
+  
+  /* Positioning for any absolute element (if needed) */
+  #torightupperofreplyBtn {
+    position: absolute;
+    right: 0.625rem;
+    top: 0.625rem;
+  }
+  
+  .handle {
+    font-size: 0.75rem;
+    font-weight: 500;
+    color: var(--text-color);
+    margin-top: 0;
+  }
+  
+  .tweet-text {
+    max-width: 90%;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+  }
+  
+  /* Images */
+  .profile-pic {
+    border: 1px solid var(--border-color);
+    border-radius: 50%;
+    width: 3rem;
+  }
+  
+  /* Delete Button */
+  .delete-btn {
+    background-color: rgb(234, 11, 11);
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    text-align: center;
+    padding: 0.3125rem;
+    margin-left: 3.125rem;
+    border-radius: 70%;
+  }
+  .delete-btn:hover {
+    background-color: rgb(255, 0, 0);
+  }
+  .delete-btn:active {
+    background-color: rgb(153, 0, 0);
+  }
+  
+  /* Utility Class */
+  .hidden {
+    display: none;
+  }
+  
