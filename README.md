@@ -66,6 +66,10 @@ Twimba is a simplified, interactive Twitter clone built with HTML, CSS, and Java
 *   **Local Storage:** The `localStorage` API is used to persist tweet data across browser sessions.
 * **UUID:** The `uuid` library is used to create unique id's for each tweet and reply.
 
+## Deployment
+
+You can view the live deployment of this project here: https://spontaneous-strudel-a26d7d.netlify.app/
+
 ## Future Improvements
 
 *   **User Authentication:** Implement user login/registration.
